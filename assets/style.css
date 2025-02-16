@@ -1,0 +1,216 @@
+
+@property --color-primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #1c1c1c;
+}
+
+main > section {
+    margin: 50px 0;
+}
+
+body{
+    background-color: grey;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+#header {
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+}
+
+
+/* ------------------------------------------------ Ajustement du site en fonction de la platforme  ---------------------------------------------------------------- */
+
+@media screen and (max-widht: 800px) {
+    .container {
+        width: 100%
+    }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .container{
+            width: 100%;
+        }
+    }
+    
+        #a-propos .container {
+            flex-direction: column;
+        }
+    
+        #documentation .tt {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+    
+    /* -Smartphone -*/
+    @media screen and (max-width: 500px) {
+        #documentation .tt {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+
+
+#home {
+    height: calc(100vh - 50px);
+    background-image: url('../assets/Images/ohro.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.829);
+    background-blend-mode: overlay;
+
+}
+
+#header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#header .logo{
+    height: 50px;
+}
+
+#header .logo img{
+    height: 100%;
+}
+
+.imagh{
+    display: flex;
+
+}
+
+
+
+.btn {
+
+display: inline-block;
+padding: 0.5rem 1rem;
+background-color: var(--color-primary);
+color: white;
+cursor: pointer;
+text-decoration: none;
+border: 1px solid var(--color-primary);
+border-radius: 5px;
+transition: 0,5s;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid var(--color-primary);
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.btn-outline-primary {
+    background-color: white;
+    color: #1c1c1c;
+    border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    
+}
+
+.center {
+    text-align: center;
+    border: 3px solid black;
+
+}
+
+.bg-light {
+    background-color: antiquewhite;
+}
+
+ /* .card{ */
+
+/* } */
+
+/* ------------------------------------------------ Tableau de services  ---------------------------------------------------------------- */
+
+#demo-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1em;
+    column-gap: 2em;
+}
+#demo-grid-2 > * { background-color: #ccc; }
+
+/* ------------------------------------------------ poUR LE TABLEAU  ---------------------------------------------------------------- */
+
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: rgb(160, 154, 154);
+}
+
+.card > * {
+    margin: 0;
+}
+
+
+.card > * {
+margin: 0;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+text-align: center;
+}
+
+.tt {display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1em;
+        column-gap: 2em;
+    }
+
+
+/* ------------------------------------------------ poUR Le à propos  ---------------------------------------------------------------- */
+
+.footer_bas{
+    background-color: rgb(187, 118, 118);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+    column-gap: 2em;
+    text-align: center;
+
+}
+
+/* ------------------------------------------------ poUR Les images de logo  ---------------------------------------------------------------- */
+
+.logo{
+    height: 30px;
+}
+
+.logos{
+    height: 15px;
+}
+
+/* ------------------------------------------------ poUR enlever les points des listes ---------------------------------------------------------------- */
+
+
+.footer_bas ul{
+    list-style: none;
+    padding: 0;
+}
